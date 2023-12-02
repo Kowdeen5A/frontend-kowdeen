@@ -26,7 +26,7 @@ const NavbarComponent = () => {
   }, [changeColor]);
 
   return (
-    <Navbar expand='lg' className={classnames({ 'color-active': changeColor })}>
+    <Navbar expand='lg bg-light' className={classnames({ 'color-active': changeColor })}>
       <Container>
         <Navbar.Brand href="/" className='fs-3 fw-bold'>
           Kow<span style={{ color: "#3A8B91" }} className=''>Deen</span>

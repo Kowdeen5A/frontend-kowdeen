@@ -12,6 +12,7 @@ import JobListings from './component/JobsListing';
 import JobDetails from './component/JobDetailPage';
 import ApplicantDetails from './component/ApplicantDetails';
 import ApplicantManagement from './component/ApplicantManagement';
+import JobApplicationPage from './pages/JobsAplicationPage';
 
 
 
@@ -22,9 +23,10 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/register' element={<RegisterPage />} />
         <Route path='/jobs' element={<JobsPage />} />
-        <Route path={"/user"} element={<Userpage />} />
-        <Route path={"/userupdate"} element={<UserUpdatePage />} />
+        <Route path="/user" element={<Userpage />} />
+        <Route path="/userupdate" element={<UserUpdatePage />} />
         <Route path="/company" element={<CompanyPage />} />
+        <Route path="/Jobs-Application" element={<JobApplicationPage/>} />
         <Route path="/company/profile" element={<CompanyProfile />} />
         <Route path="/company/jobs" element={<JobListings />} />
         <Route path="/company/jobs/:jobId" element={<JobDetails />} />
